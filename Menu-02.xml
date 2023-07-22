@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+     <view name="system">	  
+
+     <carousel name="systemcarousel">
+		<type>horizontal</type>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.4 0.4</logoSize>
+		<logoAlignment>center</logoAlignment>
+		<maxLogoCount>1</maxLogoCount>
+		<defaultTransition>fade</defaultTransition>	
+		<zIndex>999</zIndex>
+                <pos>0 0.24</pos>
+	 </carousel>
+
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0 0</origin>
+     <pos>0.14 0.97</pos>
+     <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+     </helpsystem>
+
+	   <image name="bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+	 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/bg/${system.theme}.png</path>
+	     <storyboard>
+         <animation property="y" from="-2" begin="0" duration="0" mode="easyOut"/>
+         <animation property="scale" to="1.2" begin="350" autoreverse="true" duration="3200" repeat="forever" mode="easyIn"/>
+         <animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		 </storyboard>
+		 <zIndex>1</zIndex>
+      </image>
+
+
+      <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>-0.003 0.1</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+	    <fontSize>0.050</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+
+      <image name="frame" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/frames/${system.theme}.png</path>
+         <zIndex>998</zIndex>  
+      </image>
+
+	  <image name="char1" extra="true">
+		<pos>-0.05 0</pos>
+		<maxSize>1 1</maxSize>
+		<color>ffffff</color>
+		<path>./default/char-d.png</path>
+		<path>./${system.theme}/char.png</path>
+		<zIndex>998</zIndex>
+	  </image>
+
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/assets/noise.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>               
+       <pos>0.515 0.525</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.51 0.78</size>
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>true</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <zIndex>4</zIndex>
+     </video>
+
+
+       </view>
+
+</theme>

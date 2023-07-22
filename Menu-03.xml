@@ -1,0 +1,85 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0.015 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.3 0.3</logoSize>
+		<logoAlignment>right</logoAlignment>
+		<maxLogoCount>3</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+		 
+      <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>-0.08 0.8</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+        <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+	    <fontSize>0.050</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+	  
+    <image name="frames" extra="true">
+         <origin>0 0</origin>
+         <pos>-0.1 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/frames/${system.theme}.png</path>
+         <zIndex>998</zIndex>  
+      </image>
+
+
+	   <image name="bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/bg/${system.theme}.png</path>
+		 <zIndex>1</zIndex>
+      </image>
+
+ 	 
+	  <image name="char" extra="true">
+		<pos>-0.05 0</pos>
+		<maxSize>1 1</maxSize>
+		<color>ffffff</color>
+		<path>./default/char-d.png</path>
+		<path>./${system.theme}/char.png</path>
+		<zIndex>998</zIndex>
+	  </image>
+	  
+	 	  
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.04</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.47 0.98</pos>
+     <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+     </helpsystem>
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/assets/noise.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>              
+        <pos>0.42 0.526</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.51 0.78</size>
+        <delay>0.3</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+        <storyboard>
+        <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+        <zIndex>200</zIndex>
+     </video>
+
+       </view>
+    </theme>

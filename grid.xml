@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+   <!---------------------------grid------------------------------------- -->
+
+   <view name="grid">
+
+	<image name="logo03" extra="true">
+        <pos>-0.02 -0.01</pos>
+        <maxSize>0.25 0.25</maxSize>
+		<path>./default/_inc/logo.png</path>
+		<path>./_inc/dragonlogos/${system.theme}.png</path>
+		<color>ffffff</color>
+	   <storyboard event="activate" repeatAt="1">
+        <animation property="scale" to="1.06" begin="600" autoreverse="true" duration="1000" repeat="forever" mode="easyIn"/>
+		<animation property="rotation" from= "-1.1" to="1.5" begin="600" autoreverse="true" duration="1200" repeat="forever" mode="easyIn"/>
+		</storyboard>
+	    <zIndex>2</zIndex>
+	</image>
+
+	  <image name="bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/bg/${system.theme}.png</path>
+		 <color>ffffff</color>
+         <zIndex>1</zIndex>          
+      </image>
+
+	  
+     <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0 0</origin>
+     <pos>0.14 0.97</pos>
+       <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+     </helpsystem>
+
+   		<imagegrid name="gamegrid">
+	  <pos>0 0</pos>
+      <size>1 1</size>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>4 2</autoLayout>
+      <autoLayoutSelectedZoom>2</autoLayoutSelectedZoom>
+      <margin>0.05 0.05</margin>
+<padding>0.1 0.1</padding>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+	  <imageSource>marquee</imageSource>
+	  <folderImage>./_inc/folder.png</folderImage>
+      <gameImage>./_inc/game.png</gameImage>
+	  <zIndex>300</zIndex>  
+    </imagegrid>
+
+ <image name="gridtile.favorite">
+<path>./art/gridfav.png</path>
+<pos>0.75 0</pos>
+<maxSize>0.25 0.25</maxSize>
+<origin>0 0</origin>
+<color>A0A0A0A0</color>
+</image>  
+    
+<gridtile name="default">
+<padding>1 1</padding>
+<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+<imageSizeMode>maxSize</imageSizeMode>
+<imageColor>FFFFFF</imageColor>
+<reflexion>0.09 0.0</reflexion>
+</gridtile>
+
+<gridtile name="selected">
+<backgroundCenterColor>ff000000</backgroundCenterColor>
+<backgroundEdgeColor>ff000000</backgroundEdgeColor>
+<padding>55 13</padding>
+<imageColor>FFFFFF</imageColor>
+</gridtile>
+
+<text name="gridtile">
+<color>1C00ff00</color>
+<backgroundColor>00000000</backgroundColor>
+<fontSize>0.022</fontSize>
+<alignment>center</alignment>
+<size>1 0.24</size>
+</text>
+
+<text name="gridtile_selected">
+<color>1C00ff00</color>
+<glowColor>${glowColor}</glowColor>
+<glowSize>0</glowSize>
+</text>
+	
+	
+	<text name="md_name">
+		<fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+		<fontSize>0.06</fontSize>
+		<pos>0 0.9</pos>
+		<size>1 0.024</size>
+		<alignment>center</alignment>
+		<color>ffffff</color>
+		<glowColor>10101099</glowColor>			
+		<glowSize>3</glowSize>			
+	</text>
+	
+		<text name="logoText">
+		<pos>0.2 0.35</pos>
+	    <fontSize>0.06</fontSize>
+		<fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+	    <size>0.6 0.2</size>
+		<alignment>center</alignment>
+        <color>FFFFFFB3</color>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>999</zIndex>
+    </text>	
+</view>
+   
+   </theme>

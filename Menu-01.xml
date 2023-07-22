@@ -1,0 +1,50 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+     <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>horizontal</type>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.8 0.8</logoSize>
+		<logoAlignment>center</logoAlignment>
+		<maxLogoCount>5</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+
+     <text name="systemInfo">
+	    <glowColor>000000</glowColor>
+        <pos>0 0.89</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+	    <fontSize>0.050</fontSize>
+        <zIndex>999</zIndex>
+     </text>  
+	  
+
+	  <image name="bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/bg/${system.theme}.png</path>
+		 <zIndex>1</zIndex>
+     </image>
+
+
+	       <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+     <fontSize>0.04</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.55 0.98</pos>
+      <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+     </helpsystem>
+
+     </view>
+     </theme>

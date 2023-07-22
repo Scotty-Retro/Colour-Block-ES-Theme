@@ -1,0 +1,39 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <image name="logo">
+       <linearSmooth>true</linearSmooth>
+         <path>./_inc/textlogos/${system.theme}.png</path>
+	   </image>
+
+     <carousel name="systemcarousel">
+		<type>horizontal</type>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.8 0.8</logoSize>
+		<logoAlignment>center</logoAlignment>
+		<maxLogoCount>1</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>999</zIndex>
+	 </carousel>
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0.04 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.3 0.3</logoSize>
+		<logoAlignment>right</logoAlignment>
+		<maxLogoCount>5</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>999</zIndex>
+	 </carousel>
+       </view>
+
+
+    </theme>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------basic------------------------------------- -->
+
+<view name="basic">
+      <textlist name="gamelist">      
+         <selectorColor>1c1c1c00</selectorColor>                     
+         <pos>0.26 0.15</pos>
+         <size>0.51 0.77</size>
+         <selectedColor>07ff1f</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+         <zIndex>42</zIndex>                          
+      </textlist>
+   
+       <rating name="md_rating">
+     <pos>0.4 0.8</pos>
+      <size>0.1 0.1</size>
+         <path>./_inc/dragonhead.png</path>
+      <filledPath>./_inc/dragonhead.png</filledPath>
+      <unfilledPath>./_inc/empty.png</unfilledPath>
+    </rating>
+ 
+      <image name="frame" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/frames/${system.theme}.png</path>
+         <zIndex>999</zIndex>  
+      </image>  
+
+	  <image name="bg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <path>./default/_inc/wall.jpg</path>
+         <path>./_inc/bg/${system.theme}.png</path>
+		 <zIndex>1</zIndex>
+     </image>              
+ 
+ 
+      <helpsystem name="help">
+	 <iconColor>FFFFFF</iconColor>
+         <fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+     <fontSize>0.04</fontSize>
+     <origin>0 0</origin>
+     <pos>0.15 0.96</pos>
+      </helpsystem>
+
+		<text name="logoText">
+		<pos>0 -0.039</pos>
+	    <fontSize>0.12</fontSize>
+		<fontPath>./_inc/fonts/04B_30__.ttf</fontPath>
+	    <size>1 0.2</size>
+		<alignment>center</alignment>
+        <color>FFFFFFB3</color>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>999</zIndex>
+    </text>
+</view>
+   
+   </theme>
