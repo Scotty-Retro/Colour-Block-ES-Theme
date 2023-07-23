@@ -145,6 +145,7 @@ based on:       "Sheeny" by Dwayne Hurst
 <include name="grid">./grid.xml</include>
 <include name="boxartgrid">./boxartgrid.xml</include>
 <include name="game carousel">./gamecarousel.xml</include>
+<include name="video">./video.xml</include>
 
 
 
